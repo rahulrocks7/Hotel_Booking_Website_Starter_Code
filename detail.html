@@ -2,17 +2,24 @@
 <html>
 	<head>
 		<title>Detail</title>
+        <link rel="stylesheet" href="styles/detail.css">
+		<link rel="stylesheet" href="styles/common.css">
 	</head>
 	<body>
-		<div class="wrapper">
-			<div class="header">
-				<a href="index.html"><img src="assests/images/logo.png" alt="logo" height="100px" width="150px"></a>
-                <a href="login.html" target="_self">Login</a>
-			</div>
+        <!-- Wrapper div it contain entire content of the html body -->
+		<div id="wrapper">
 
-			<div class="content">
+            <!-- Header begin -->
+			<header>
+				<a href="index.html"><img src="assests/images/logo.png" alt="logo"></a>
+                <a href="login.html" target="_self">Login</a>
+            </header>
+            <!-- Header ends -->
+            
+            <!-- Content body begin -->
+			<div id="content">
 				<div class="hotel1">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt=""/><br>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="RadissonHotelImage"/><br>
                    
                     <form>
                         <label for="adults">Adults:</label>
@@ -22,20 +29,16 @@
                         <input type="text " name="name" required>
                         <br>
                         <label for="from_date">From Date:</label>
-                        <input type="date" required name="fromDate">
+                        <input type="date" name="fromDate" required>
                         <br>
                         <label for="to_date">To Date:</label>
-                        <input type="date" required name="toDate">
+                        <input type="date" name="toDate" required>
                         <br>
                         <label for="total">Total:</label>
-                        <input type="text" readonly name="price">
+                        <input type="text" name="price" readonly>
                         <br>
                         <button type="submit" formaction="payment.html">Submit</button>
-
-
                     </form>
-
-
 
                     <h1>Radisson  Blu Hotel</h1>
                     <p>RATING</p>
@@ -54,14 +57,18 @@
                         aliquid itaque.</p>
                 </div>
 			</div>
+            <!-- Content body ends -->
 
-			<div class="footer">
+            <!-- Footer begin -->
+			<footer>
 				<a href="contact.html" target="_self">Contact Us</a><br>
-                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="" height="20px" width="22px"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="" height="20px" width="22px"></a>
-                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="" height="20px" width="22px"><br></a>
-                © 2020 ROOM SEARCH PVT. LTD.
-			</div>
+                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebookLogo" ></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagramLogo" ></a>
+                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitterLogo" /></a><br>
+                <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+			</footer>
+            <!-- Footer ends -->
+            
 		</div>
 	</body>
 </html>

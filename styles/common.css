@@ -1,0 +1,19 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+header img{
+    height: 60px;
+    width: 60px;
+}
+
+footer img{
+    height: 20px;
+    width: 22px;
+}
