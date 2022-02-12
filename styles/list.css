@@ -1,18 +1,18 @@
-#viewLink{
-    margin-top: 6em;
+body a{
+    text-decoration: none;
 }
-
-.first{
-    margin-left: 30em;
+#viewLink{
+    width: 100%;
+    text-align: center;
+    margin-top: 6em;
+    
 }
 
 .hotelList img{
     height: 200px;
     width: 250px;
 }
-*h3{
-    text-decoration: none;
-}
+
 #listView{
     display: flex;
     text-decoration: none;
@@ -26,6 +26,11 @@
     margin: 1.5em;
     display: flex;
     color: black;
+    text-decoration: none;
+
+}
+.hotelList:hover{
+    background-color: rosybrown;
     text-decoration: none;
 }
 
@@ -45,11 +50,9 @@
     margin-left: 5em;
 }
 
-#content ul li{
-    text-align: center; 
+#content ul li{ 
     display: inline;
-    list-style-type: none;
-    margin-left: 3em;
+    margin-left: 2em;
     }
 
 #content ul li a{
@@ -57,9 +60,4 @@
     color: black;
     
 }
-
-#mapView{
-    display: none;
-}
-
-
+ 
