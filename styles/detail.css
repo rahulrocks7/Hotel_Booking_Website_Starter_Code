@@ -1,68 +1,146 @@
 
-
+#wrapper{
+    margin-bottom: 5%;
+}
 #content img{
 
     max-height: 350px;
     width: 25em;
     margin-top: 1em;
+    
 }
 
-.hotelDetail{
-    margin: 1.5em;
-    padding: 0.5em 0em 0em 12em;
-    margin-top: 5.5em;
-    display: flex ;
-    flex-wrap:wrap;
-    border: 1px solid black;
+#hotelDetail{
+    display: flex;
+   
+    margin: 7% 2% 2% 2% ;
+    padding: 2% 0;
     max-height: 400px;
-}
-
-.form1{
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-
-    margin-left: 10em;
-    margin-top: -0.5em;
-    border-left: 1px solid black;
-    height: 22em;
-    padding-top: 2em;
-    padding-left: em;
-} 
-
-.label1{
+    border: 1px solid black;
+  }
+  
+  #imageSlider{
+    flex-grow: 3;
     display: flex;
-    grid-column-gap: 5em;
-    grid-row-gap: 5em;
-    margin: 0em 3em 1.2em 1em;
     
-}
-
-.label1 input{
-    width: 18em;
-    margin-left: 3em;
     
-}
-.adultField .nameField .totalField{
-    padding-right: 2em;
-}
-.label1 label{
+    border-right: 1px solid black ;
+    
+  }
+  #imageSlider .carousel-item {
+    max-height: 350px;
+    max-width: 1000px;
+    padding: 1% 20% ;
+  }
+  
+  #form{
     display: flex;
+    height: 110%;
+    width: 40%;
+    padding: 0 2%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     
-}
+  }
+  
+  .inputs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .inputs> input{
+    width: 60%;
+  }
+  #submitButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  #submitButton input{
+    padding: 2%;
+  }
+  
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+   
+    background-image: none;
+    
+  }
+  
+  .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: rosybrown;
+  }
 
-.form1 button{
-    margin-left: 12em;
-    padding: 0.5em;
-}
+  .carousel-control-next-icon:after
+  {
+    content: '>';
+    font-size: 55px;
+    color: rosybrown;
+  }
+    
+  .info {
+    margin-left: 4% ;
+    margin-top: -5%;
+  }
+  .checked{
+      color: orange;
+  }
+  @media only screen and (min-width:576px) and ( max-width:768px) {
+    .hotelDetail{
+      min-height: 380px;
+      max-height: 380px;
+      max-width: 650px;
+      min-width: 650px;
+      margin-top: 30px;
+    }
+    
+    #form{
+      display: flex;
+      height: 100%;
+      width: 40%;
+      padding: 1% 1%;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+  }
 
-.info{
-    margin: 2em;
-}
-.info h5{
-    font-family: cursive;
-}
+@media only screen and (max-width:576px){
+    #hotelDetail{
+      display: flex;
+      flex-direction: column;
+      max-width: 350px;
+      min-width: 90%;
+      min-height: 700px;
+    }
+    #imageSlider{
+      border-right: hidden;
+      border-bottom: 1px solid black;
+     
+    }
+    #imageSlider .carousel-item >img {
+      margin: 2% ;
+      min-width: 300px;
+      min-height: 270px;
+      margin-top: 10%;
+    }
+    #form{
+      display: flex;
+     
+      width: 80%;
+      padding: 3% 2% 2% 6%;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+   
+  
+  }
 
 

@@ -3,9 +3,14 @@
 
 	<head>
 		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/be61e954f2.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<title>Index</title>
 
 		<link rel="stylesheet" href="styles/index.css">
@@ -16,6 +21,11 @@
 	<body>
 		<!-- Wrapper div it contain entire content of the html body -->
 		<div id="wrapper">
+			<!-- Loader div begin -->
+			<div id="loader">
+				
+			</div>
+			<!-- Loader div ends -->
 			<!-- Header begin -->
 			<header>
 				<img src="assests/images/logo.png" alt="logo" class="logo">
@@ -36,22 +46,31 @@
 				<!-- Search bar ends -->
 				
 				<div id="cityCards">
-					<div class="cards">
-                		<a href="list.html" target="_self"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="city1" ></a>
-						<a href="list.html" target="_self"><div class="overlay"><span class="cityName">Delhi</span></div> </a>
+					<a href="list.html" target="_self">
+					<div class="cards" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg) ">
+						<div class="overlay">
+						<p style="text-decoration: none; color:  #f1f1f1;">Delhi</p>
+						</div>
+					</div></a>
+
+					<div class="cards" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg) ;">
+						<div class="overlay">
+						<p style="color:  #f1f1f1;">Goa</p>
+						</div>
 					</div>
-					<div class="cards">
-                		<img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="city2" >
-						<div class="overlay"><span class="cityName">Goa</span></div>
+
+					<div class="cards" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg) ;">
+						<div class="overlay">
+						<p style="color:  #f1f1f1;">Hyderabad</p>
+						</div>
 					</div>
-					<div class="cards">
-                		<img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="city3" >
-						<div class="overlay"><span class="cityName">Hyderabad</span></div>
+
+					<div class="cards" style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg) ;">
+						<div class="overlay">
+						<p style="color:  #f1f1f1;">Kolkata</p>
+						</div>
 					</div>
-					<div class="cards">
-                		<img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="city4" >
-						<div class="overlay"><span class="cityName">Kolkata</span></div>
-					</div>
+
 				</div>
 				<div id="view">
                 	<a href="#" class="btn btn-secondary"">View More</a>
@@ -69,14 +88,14 @@
 					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body" style="text-align: center; ">
-						<label for="UserName" style="margin-left: 3em; ">Username:</label>
+						<label for="UserName" style="margin: 1em 0em 1em 2em;; ">Username:</label>
 						<input type="text" placeholder="Enter Username" name="username" required style="margin-left: 3em;">
 						<br>
-						<label for="Password" style="margin: 1.5em 0em 1em 3em;">Password :</label>
+						<label for="Password" style="margin: 1em 0em 1em 2em;">Password:</label>
 						<input type="password" placeholder="Enter Password" name="password" required style="margin-left: 3em;">
 						<br>
 					</div>
-					<div class="modal-footer" style="padding-right: 13em;">
+					<div class="modal-footer d-flex justify-content-center">
 				
 					  <button type="button" class="btn btn-primary">Login</button>
 					</div>
@@ -97,10 +116,10 @@
 					<div class="modal-body">
 						<span>Thank you for reaching out!!!</span><br> 
 						<span>Please enter you email and we get back to you.</span><br>
-						<form action="">
-							<label for="email">Email:</label>
-							<input type="email" placeholder="Enter your email id" name="email" required>
-						</form>
+						form
+						<label for="email">Email:</label>
+						<input type="email" placeholder="Enter your email id" name="email" required>
+						<br>
 					</div>
 					<div class="modal-footer">
 				
@@ -129,11 +148,7 @@
 				</div>
 			</footer>
 			<!-- Footer ends -->
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		
 		</div>
 		
 	</body>
