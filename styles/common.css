@@ -17,11 +17,10 @@ header img{
 }
 
 .login{
-    float: right;
-    line-height: 57px;
     text-decoration: none;
     margin-right: 2%;
     color: black;
+    vertical-align: middle;
 
 }
 
@@ -29,8 +28,9 @@ header{
     background-color: rosybrown;
     position: fixed;
     width: 100%;
-    overflow: hide;
-    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -52,25 +52,28 @@ footer{
     position: fixed;
     overflow: hidden;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
 }
 
-.contact-us{
+.contact-us {
     text-decoration: none;
-    margin-left: 1%;
-    margin-top: 30px;
-    line-height: 30px;
     color: black;
-   
+}
+
+#contact {
+    margin-left: 2%;
 }
 
 #social-media{
-    float: right;
     margin-right: 1%;
-    margin-top: 1%;
+
 
 }
 
 .copyright{
-    margin-left: 43%;
+    
     font-size: 10px;
 }

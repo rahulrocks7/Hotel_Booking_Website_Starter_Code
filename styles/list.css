@@ -1,37 +1,61 @@
-#content{
-    margin-top: 6%;
-    
+#viewLink{
+    margin-top: 6em;
+}
+
+.first{
+    margin-left: 30em;
 }
 
 .hotelList img{
     height: 200px;
     width: 250px;
-    
+}
+*h3{
+    text-decoration: none;
+}
+#listView{
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .hotelList{
-    margin: 2%;
-    background-color: rgb(132, 136, 139);
-    width: 40%;
-    display: inline-block;
-    text-decoration: none;
+    background-color: lightgrey;
+    width: 33em;
+    margin: 1.5em;
+    display: flex;
     color: black;
+    text-decoration: none;
 }
 
+.info{
+    padding-left: 1.5em;
+    text-decoration: none;
+}
+#hotel1{
+    margin-left: 5em;
+}
 
-.first{
-    margin-left: 36%;
+#hotel2{
+    margin-right: 5em;
+}
+
+#hotel3{
+    margin-left: 5em;
 }
 
 #content ul li{
     text-align: center; 
     display: inline;
     list-style-type: none;
-    margin-left: 30px;
-}
+    margin-left: 3em;
+    }
+
 #content ul li a{
     text-decoration: none;
     color: black;
+    
 }
 
 #mapView{

@@ -4,6 +4,7 @@
 		<title>Detail</title>
         <link rel="stylesheet" href="styles/detail.css">
 		<link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
 	</head>
 	<body>
         <!-- Wrapper div it contain entire content of the html body -->
@@ -18,32 +19,49 @@
             
             <!-- Content body begin -->
 			<div id="content">
-				<div id="hotel1" class="hotelDetail">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="RadissonHotelImage"/><br>
-                   
-                    <form>
-                        <label for="adults">Adults:</label>
-                        <input type="number" min="1" value="1" name="adult">
-                        <br>
-                        <label for="name">Name:</label>
-                        <input type="text " name="name" required>
-                        <br>
-                        <label for="from_date">From Date:</label>
-                        <input type="date" name="fromDate" required>
-                        <br>
-                        <label for="to_date">To Date:</label>
-                        <input type="date" name="toDate" required>
-                        <br>
-                        <label for="total">Total:</label>
-                        <input type="text" name="price" readonly>
-                        <br>
-                        <button type="submit" formaction="payment.html">Submit</button>
-                    </form>
 
+
+				<div id="hotel1" class="hotelDetail">
+                    <div class="card">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="RadissonHotelImage"/><br>
+                    </div>
+                    <div class="form">
+                        <form>
+                            <div class="label">
+                                <label for="adults">Adults:</label>
+                                <input type="number" min="1" value="1" name="adult" class="adultField">
+                            </div>
+
+                            <div class="label">
+                                <label for="name">Name:</label>
+                                <input type="text " name="name" required class="nameField">
+                            </div>
+
+                            <div class="label">
+                                <label for="from_date">From Date:</label>
+                                <input type="date" name="fromDate" required style="margin-left: 1em;">
+                            </div>  
+
+                            <div class="label">
+                                <label for="to_date">To Date:</label>
+                                <input type="date" name="toDate" required style="margin-left: 2.3em;">
+                            </div>
+
+                            <div class="label">
+                                <label for="total">Total:</label>
+                                <input type="text" name="price" readonly class="totalField">
+                            </div>
+                    
+                            <button type="submit" formaction="payment.html">Book Now</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="info">
                     <h1>Radisson  Blu Hotel</h1>
-                    <p>RATING</p>
+                    <h5>RATING</h5>
                     <p>5 Star</p>
-                    <p>AMENITIES</p>
+                    <h5>AMENITIES</h5>
                     <ul>
                         <li>Room Service</li>
                         <li>Restaurant</li>
@@ -61,16 +79,18 @@
 
             <!-- Footer begin -->
 			<footer>
-				<a href="contact.html" target="_self" class="contact-us"><span>Contact Us</span></a>
+				<div id="contact">
+					<a href="contact.html" target="_self" class="contact-us"><span>Contact Us</span></a>
+				</div>
+
+				<div class="copyright-info">
+					<span class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+				</div>
 
 				<div id="social-media">     
 					<a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebookLogo" ></a>
                 	<a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagramLogo" ></a>
                 	<a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitterLogo" ><br></a>
-				</div>
-				<br>
-				<div class="copyright-info"></div>
-					<span class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</span>
 				</div>
 			</footer>
             <!-- Footer ends -->
