@@ -1,3 +1,8 @@
+/* #logo{
+    margin-top: 20%;
+    margin-bottom: 20%;
+} */
+
 #content img{
     height: 150px;
     width: 150px;
@@ -10,6 +15,16 @@
     background-size: cover;
 }
 
+#searchBar input{
+    margin-top: 14.3%;
+    margin-left: 36%;
+    width: 380px;
+    padding: 10px;
+    border: 1px transparent;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
 #cityCards img{
     padding: 4%;
     margin: 0 auto;
@@ -19,5 +34,10 @@
 #cityCards{
     margin-left: 15%;
     margin-right: 15%;
+}
 
+.view-more{
+    color: black;
+    text-decoration: none;
+    margin-left: 45%;
 }

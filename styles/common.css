@@ -3,16 +3,42 @@ body{
     width: 100%;
     margin: 0;
     background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-#wrapper{
-    height: 100%;
-    width: 100%;
-}
+/* #wrapper{
+    
+} */
+
 
 header img{
     height: 60px;
     width: 60px;
+}
+
+.login{
+    float: right;
+    line-height: 57px;
+    text-decoration: none;
+    margin-right: 2%;
+    color: black;
+
+}
+
+header{
+    background-color: rosybrown;
+    position: fixed;
+    width: 100%;
+    overflow: hide;
+    top: 0;
+}
+
+
+#content{
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6%;
 }
 
 footer img{
@@ -20,10 +46,31 @@ footer img{
     width: 22px;
 }
 
-header{
-    background-color: rosybrown;
-}
-
 footer{
     background-color: rosybrown;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.contact-us{
+    text-decoration: none;
+    margin-left: 1%;
+    margin-top: 30px;
+    line-height: 30px;
+    color: black;
+   
+}
+
+#social-media{
+    float: right;
+    margin-right: 1%;
+    margin-top: 1%;
+
+}
+
+.copyright{
+    margin-left: 43%;
+    font-size: 10px;
 }

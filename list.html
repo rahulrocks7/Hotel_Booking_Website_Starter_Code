@@ -10,37 +10,36 @@
 		<div id="wrapper">
 
             <!-- Header begin -->
-			<header id="header">
+			<header>
 				<a href="index.html"><img src="assests/images/logo.png" alt="logo" ></a>
-
-                <a href="login.html" target="_self">Login</a>
+                <a href="login.html" target="_self" class="login"><span>Login</span></a>
             </header>
             <!-- Header ends -->
 
             <!-- Content body begin -->
-			<div class="content">
+			<div id="content">
 				<ul>
-                    <li><a href="#listView">List View</a></li>
-                    <li><a href="#mapView">Map View</a></li>
+                    <li><a href="#listView" class="first"><b>List View</b></a></li>
+                    <li><a href="#mapView"><b>Map View</b></a></li>
                 </ul>
 
                 <!-- List view container begin -->
                 <div id="listView">
-                    <a href="detail.html"><div class="hotelList">
+                    <a href="detail.html"><div id="hotel1" class="hotelList">
                         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="RadissonHotelImage">
                         <h3>Radisson  Blu Hotel</h3>
                         <p>5 Star</p>
                         <p>New Delhi</p>
                     </div></a>
 
-                    <div class="hotelList">
+                    <div id="hotel2" class="hotelList">
                         <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="LalitHotelImage">
                         <h3>The Lalit New Delhi</h3>
                         <p>4.5 Star</p>
                         <p>New Delhi</p>
                     </div>
 
-                    <div class="hotelList">
+                    <div id="hotel3" class="hotelList">
                         <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="TajHotelImage">
                         <h3>Taj Palace</h3>
                         <p>4.0 Star</p>
@@ -61,12 +60,18 @@
 
             <!-- Footer begin -->
 			<footer>
-				<a href="contact.html" target="_self">Contact Us</a><br>
-                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebookLogo" ></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagramLogo" ></a>
-                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitterLogo" ></a><br>
-                <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
-            </footer>
+				<a href="contact.html" target="_self" class="contact-us"><span>Contact Us</span></a>
+
+				<div id="social-media">     
+					<a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebookLogo" ></a>
+                	<a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagramLogo" ></a>
+                	<a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitterLogo" ><br></a>
+				</div>
+				<br>
+				<div class="copyright-info"></div>
+					<span class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+				</div>
+			</footer>
             <!-- Footer ends -->
 
 		</div>

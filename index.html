@@ -4,16 +4,15 @@
 		<title>Index</title>
 		<link rel="stylesheet" href="styles/index.css">
 		<link rel="stylesheet" href="styles/common.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
 	</head>
 	<body>
 		<!-- Wrapper div it contain entire content of the html body -->
 		<div id="wrapper">
 			<!-- Header begin -->
 			<header>
-				<img src="assests/images/logo.png" alt="logo" >
-
-				<a href="login.html" target="_self">Login</a>
-				
+				<img src="assests/images/logo.png" alt="logo" class="logo">
+				<a href="login.html" target="_self" class="login"><span>Login</span></a>
 			</header>
 			<!-- Header ends -->
 
@@ -21,7 +20,7 @@
 			<div id="content">
 				<!-- Search bar begin -->
 				<div id="searchBar">
-					<input type="text" placeholder="City"><br>
+					<input type="text" placeholder="City" ><br>
 				</div>
 				<!-- Search bar ends -->
 				<div id="cityCards">
@@ -34,17 +33,23 @@
                 	<img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="city4" >
                 	<br>
 				</div>
-                <a href="#">View more >></a>
+                <a href="#" class="view-more"><span>View more >></span></a>
 			</div>
 			<!-- Content body ends -->
 
 			<!-- Footer begin -->
 			<footer>
-				<a href="contact.html" target="_self">Contact Us</a><br>
-                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebookLogo" ></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagramLogo" ></a>
-                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitterLogo" ><br></a>
-                <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+				<a href="contact.html" target="_self" class="contact-us"><span>Contact Us</span></a>
+
+				<div id="social-media">     
+					<a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebookLogo" ></a>
+                	<a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagramLogo" ></a>
+                	<a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitterLogo" ><br></a>
+				</div>
+				<br>
+				<div class="copyright-info"></div>
+					<span class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+				</div>
 			</footer>
 			<!-- Footer ends -->
 			
